@@ -28,6 +28,7 @@ Color bodycolor = new Color(102,102,255);
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         body = new javax.swing.JPanel();
         nav = new javax.swing.JPanel();
         navuser = new javax.swing.JPanel();
@@ -36,10 +37,13 @@ Color bodycolor = new Color(102,102,255);
         jLabel2 = new javax.swing.JLabel();
         navclasswork = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
-        jDesktopPane1 = new javax.swing.JDesktopPane();
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-user-100_1.png"))); // NOI18N
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(760, 420));
@@ -48,6 +52,7 @@ Color bodycolor = new Color(102,102,255);
         body.setLayout(null);
 
         nav.setBackground(new java.awt.Color(51, 102, 255));
+        nav.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         navuser.setBackground(new java.awt.Color(51, 102, 255));
         navuser.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -68,6 +73,8 @@ Color bodycolor = new Color(102,102,255);
         jLabel1.setText("User");
         navuser.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 140, -1));
 
+        nav.add(navuser, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 153, -1, 43));
+
         navgrade.setBackground(new java.awt.Color(51, 102, 255));
         navgrade.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -83,6 +90,8 @@ Color bodycolor = new Color(102,102,255);
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Grades");
         navgrade.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 140, -1));
+
+        nav.add(navgrade, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 207, -1, 43));
 
         navclasswork.setBackground(new java.awt.Color(51, 102, 255));
         navclasswork.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -100,72 +109,30 @@ Color bodycolor = new Color(102,102,255);
         jLabel3.setText("Classwork");
         navclasswork.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 140, 20));
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-user-100.png"))); // NOI18N
+        nav.add(navclasswork, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 261, -1, 43));
 
         jLabel5.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("User Name");
+        nav.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 106, 140, 29));
 
-        javax.swing.GroupLayout navLayout = new javax.swing.GroupLayout(nav);
-        nav.setLayout(navLayout);
-        navLayout.setHorizontalGroup(
-            navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navuser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navgrade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navclasswork, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        navLayout.setVerticalGroup(
-            navLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navLayout.createSequentialGroup()
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(navuser, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(navgrade, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(navclasswork, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(116, Short.MAX_VALUE))
-        );
+        jPanel1.setBackground(new java.awt.Color(51, 102, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel6.setBackground(new java.awt.Color(51, 102, 255));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-user-100_1.png"))); // NOI18N
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, -1));
+
+        nav.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 140, 100));
 
         body.add(nav);
         nav.setBounds(0, 0, 140, 420);
 
         header.setBackground(new java.awt.Color(0, 102, 204));
-
-        javax.swing.GroupLayout headerLayout = new javax.swing.GroupLayout(header);
-        header.setLayout(headerLayout);
-        headerLayout.setHorizontalGroup(
-            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
-        );
-        headerLayout.setVerticalGroup(
-            headerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
-        );
-
+        header.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         body.add(header);
         header.setBounds(140, 0, 620, 80);
-
-        jDesktopPane1.setBackground(new java.awt.Color(102, 102, 255));
-
-        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
-        jDesktopPane1.setLayout(jDesktopPane1Layout);
-        jDesktopPane1Layout.setHorizontalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 620, Short.MAX_VALUE)
-        );
-        jDesktopPane1Layout.setVerticalGroup(
-            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
-        );
-
-        body.add(jDesktopPane1);
-        jDesktopPane1.setBounds(140, 80, 620, 340);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -207,9 +174,9 @@ navgrade.setBackground(navcolor);        // TODO add your handling code here:
     }//GEN-LAST:event_navclassworkMouseExited
 
     private void navuserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navuserMouseClicked
-        userpage sp = new userpage();
-        sp.setVisible(true);
-        this.dispose();
+     userpage sp = new userpage();
+       sp.setVisible(true);
+      this.dispose();
     }//GEN-LAST:event_navuserMouseClicked
 
     /**
@@ -250,12 +217,13 @@ navgrade.setBackground(navcolor);        // TODO add your handling code here:
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel body;
     private javax.swing.JPanel header;
-    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel nav;
     private javax.swing.JPanel navclasswork;
     private javax.swing.JPanel navgrade;
