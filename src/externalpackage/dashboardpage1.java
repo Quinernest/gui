@@ -3,17 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package externalpackage;
+import internalpage.userinternal;
 import java.awt.*;
 /**
  *
  * @author SCC-PC01
  */
-public class dashboardpage extends javax.swing.JFrame {
+public class dashboardpage1 extends javax.swing.JFrame {
 
     /**
-     * Creates new form dashboardpage
+     * Creates new form dashboardpage1
      */
-    public dashboardpage() {
+    public dashboardpage1() {
         initComponents();
     }
 Color navcolor = new Color(51,102,255);
@@ -28,7 +30,6 @@ Color bodycolor = new Color(102,102,255);
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel4 = new javax.swing.JLabel();
         body = new javax.swing.JPanel();
         nav = new javax.swing.JPanel();
         navuser = new javax.swing.JPanel();
@@ -41,12 +42,9 @@ Color bodycolor = new Color(102,102,255);
         jPanel1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         header = new javax.swing.JPanel();
-
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-user-100_1.png"))); // NOI18N
+        maindesk = new javax.swing.JDesktopPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(760, 420));
 
         body.setBackground(new java.awt.Color(102, 102, 255));
         body.setLayout(null);
@@ -134,11 +132,27 @@ Color bodycolor = new Color(102,102,255);
         body.add(header);
         header.setBounds(140, 0, 620, 80);
 
+        maindesk.setBackground(new java.awt.Color(102, 102, 255));
+
+        javax.swing.GroupLayout maindeskLayout = new javax.swing.GroupLayout(maindesk);
+        maindesk.setLayout(maindeskLayout);
+        maindeskLayout.setHorizontalGroup(
+            maindeskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 620, Short.MAX_VALUE)
+        );
+        maindeskLayout.setVerticalGroup(
+            maindeskLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 340, Short.MAX_VALUE)
+        );
+
+        body.add(maindesk);
+        maindesk.setBounds(140, 80, 620, 340);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(body, javax.swing.GroupLayout.DEFAULT_SIZE, 758, Short.MAX_VALUE)
+            .addComponent(body, javax.swing.GroupLayout.DEFAULT_SIZE, 760, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,23 +160,28 @@ Color bodycolor = new Color(102,102,255);
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    private void navuserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navuserMouseClicked
+        userinternal sp = new userinternal();
+      maindesk.add(sp).setVisible(true);
+       // this.dispose();
+    }//GEN-LAST:event_navuserMouseClicked
+
     private void navuserMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navuserMouseEntered
-      navuser.setBackground(bodycolor);
+        navuser.setBackground(bodycolor);
     }//GEN-LAST:event_navuserMouseEntered
 
     private void navuserMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navuserMouseExited
-       navuser.setBackground(navcolor);
+        navuser.setBackground(navcolor);
     }//GEN-LAST:event_navuserMouseExited
 
     private void navgradeMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navgradeMouseEntered
-       navgrade.setBackground(bodycolor);
+        navgrade.setBackground(bodycolor);
     }//GEN-LAST:event_navgradeMouseEntered
 
     private void navgradeMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navgradeMouseExited
-navgrade.setBackground(navcolor);        // TODO add your handling code here:
+        navgrade.setBackground(navcolor);        // TODO add your handling code here:
     }//GEN-LAST:event_navgradeMouseExited
 
     private void navclassworkMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navclassworkMouseEntered
@@ -172,12 +191,6 @@ navgrade.setBackground(navcolor);        // TODO add your handling code here:
     private void navclassworkMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navclassworkMouseExited
         navclasswork.setBackground(navcolor);
     }//GEN-LAST:event_navclassworkMouseExited
-
-    private void navuserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navuserMouseClicked
-     userpage sp = new userpage();
-       sp.setVisible(true);
-      this.dispose();
-    }//GEN-LAST:event_navuserMouseClicked
 
     /**
      * @param args the command line arguments
@@ -196,20 +209,20 @@ navgrade.setBackground(navcolor);        // TODO add your handling code here:
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(dashboardpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboardpage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(dashboardpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboardpage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(dashboardpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboardpage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(dashboardpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(dashboardpage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new dashboardpage().setVisible(true);
+                new dashboardpage1().setVisible(true);
             }
         });
     }
@@ -220,10 +233,10 @@ navgrade.setBackground(navcolor);        // TODO add your handling code here:
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JDesktopPane maindesk;
     private javax.swing.JPanel nav;
     private javax.swing.JPanel navclasswork;
     private javax.swing.JPanel navgrade;

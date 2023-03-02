@@ -1,3 +1,5 @@
+package internalpage;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,12 +10,12 @@ import java.awt.*;
  *
  * @author SCC-PC01
  */
-public class userpage extends javax.swing.JFrame {
+public class userinternal extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form userpage
+     * Creates new form userinternal
      */
-    public userpage() {
+    public userinternal() {
         initComponents();
     }
 Color navcolor = new Color(51,102,255);
@@ -37,13 +39,11 @@ Color bodycolor = new Color(102,102,255);
         jPanel6 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         mg = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         LG = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel5 = new javax.swing.JLabel();
 
         jPanel1.setBackground(new java.awt.Color(102, 102, 255));
         jPanel1.setPreferredSize(new java.awt.Dimension(760, 420));
@@ -77,9 +77,11 @@ Color bodycolor = new Color(102,102,255);
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, -1, 202));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 771, 202));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 771, 180));
 
         mg.setBackground(new java.awt.Color(102, 102, 255));
+        mg.setMinimumSize(new java.awt.Dimension(170, 157));
+        mg.setPreferredSize(new java.awt.Dimension(170, 157));
         mg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 mgMouseEntered(evt);
@@ -90,17 +92,16 @@ Color bodycolor = new Color(102,102,255);
         });
         mg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-admin-settings-male-100.png"))); // NOI18N
-        mg.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 11, 155, -1));
-
         jLabel6.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("Manage Setting");
-        mg.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 122, 155, -1));
+        mg.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 180, -1));
 
-        jPanel1.add(mg, new org.netbeans.lib.awtextra.AbsoluteConstraints(151, 228, -1, -1));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-admin-settings-male-100.png"))); // NOI18N
+        mg.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(4, 20, 170, 100));
+
+        jPanel1.add(mg, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 200, 180, 160));
 
         LG.setBackground(new java.awt.Color(102, 102, 255));
         LG.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -113,17 +114,16 @@ Color bodycolor = new Color(102,102,255);
         });
         LG.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel9.setBackground(new java.awt.Color(102, 102, 255));
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons8-log-out-100.png"))); // NOI18N
-        LG.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 16, 155, -1));
-
         jLabel10.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("Log out");
-        LG.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 122, 155, -1));
+        LG.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 180, -1));
 
-        jPanel1.add(LG, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 228, -1, -1));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/icons8-log-out-100.png"))); // NOI18N
+        LG.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 180, -1));
+
+        jPanel1.add(LG, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 200, 180, 160));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -133,11 +133,10 @@ Color bodycolor = new Color(102,102,255);
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 390, Short.MAX_VALUE)
         );
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void mgMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mgMouseEntered
@@ -156,40 +155,6 @@ Color bodycolor = new Color(102,102,255);
         LG.setBackground(bodycolor);
     }//GEN-LAST:event_LGMouseExited
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(userpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(userpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(userpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(userpage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new userpage().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel LG;
@@ -201,12 +166,9 @@ Color bodycolor = new Color(102,102,255);
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel mg;
     // End of variables declaration//GEN-END:variables
