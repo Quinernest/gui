@@ -4,19 +4,29 @@
  * and open the template in the editor.
  */
 package externalpackage;
-import internalpage.userinternal;
+import internalpage.*;
 import java.awt.*;
+import javax.swing.border.Border;
+import javax.swing.plaf.basic.BasicInternalFrameUI;
+
+
 /**
  *
  * @author SCC-PC01
  */
 public class dashboardpage1 extends javax.swing.JFrame {
 
+    private BasicInternalFrameUI BasicInternalFrameUI;
+
     /**
      * Creates new form dashboardpage1
      */
     public dashboardpage1() {
         initComponents();
+        
+        this.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0,0, 0));
+        BasicInternalFrameUI bi =(BasicInternalFrameUI);
+        bi.setNorthPane(null); 
     }
 Color navcolor = new Color(51,102,255);
 Color headcolor = new Color(0,102,204);
@@ -160,6 +170,7 @@ Color bodycolor = new Color(102,102,255);
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void navuserMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_navuserMouseClicked
@@ -242,4 +253,8 @@ Color bodycolor = new Color(102,102,255);
     private javax.swing.JPanel navgrade;
     private javax.swing.JPanel navuser;
     // End of variables declaration//GEN-END:variables
+
+    private void setBorder(Border createEmptyBorder) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
